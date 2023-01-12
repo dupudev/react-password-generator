@@ -47,14 +47,23 @@ form {
 
 .form-range::-webkit-slider-thumb {
   background: #198754;
+  width: 22px;
+  height: 22px;
+  transform: translateY(-3px);
 }
 
 .form-range::-moz-range-thumb {
   background: #198754;
+  width: 22px;
+  height: 22px;
+  transform: translateY(-3px);
 }
 
 .form-range::-ms-thumb {
   background: #198754;
+  width: 22px;
+  height: 22px;
+  transform: translateY(-3px);
 }
 
 .form-range:focus::-webkit-slider-thumb {
@@ -65,6 +74,13 @@ form {
 }
 .form-range:focus::-ms-thumb {
   box-shadow: 0 0 3px 3px #198754;
+}
+
+.form-check-input {
+  min-width: 40px;
+  height: 22px;
+  transform: translateY(-3px);
+  margin-right: 10px;
 }
 
 .form-check-input:hover {

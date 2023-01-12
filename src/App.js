@@ -73,7 +73,7 @@ const App = () => {
         <Form.Text
           style={{
             transition: 'all 0.3s ease-in-out',
-            transform: passwordCopied ? 'translateY(0)': 'translateY(10px)',
+            transform: passwordCopied ? 'translateY(0)' : 'translateY(10px)',
           }}
           className={`d-block text-center text-success mb-1 ${
             passwordCopied ? 'opacity-100' : 'opacity-0'
@@ -89,8 +89,12 @@ const App = () => {
             className='mb-4 pe-5 ps-3 rounded-5 text-center'
           ></Form.Control>
           <BiCopy
-            style={{ cursor: 'pointer' }}
-            className='position-absolute top-50 end-0 translate-middle-y me-3 fs-5 text-success cursor-pointer'
+            style={{
+              cursor: 'pointer',
+              width: '40px',
+              height: '40px',
+            }}
+            className='position-absolute top-50 end-0 translate-middle-y p-2 me-1 fs-5 text-success cursor-pointer'
             onClick={() => copyToClipboard()}
           />
         </Form.Group>
@@ -113,7 +117,7 @@ const App = () => {
             ></Form.Range>
             <div
               style={{
-                width: '40px',
+                width: '36px',
                 height: '30px',
                 padding: '0 1px 0 0',
                 border: '2px solid #198754',
@@ -127,7 +131,7 @@ const App = () => {
             checked={state.includeUppercase}
             type='switch'
             label='Uppercase'
-            className='mb-2'
+            className='mb-3'
             onChange={() =>
               dispatch({
                 type: ACTION.TOGGLE_UPPERCASE,
@@ -138,7 +142,7 @@ const App = () => {
             checked={state.includeNumbers}
             type='switch'
             label='Numbers'
-            className='mb-2'
+            className='mb-3'
             onChange={() =>
               dispatch({
                 type: ACTION.TOGGLE_NUMBERS,
