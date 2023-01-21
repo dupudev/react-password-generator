@@ -4,7 +4,7 @@
 
 ## About
 
-Weather app made with React and React-Bootstrap. Application will automatically load weather based on user location if location access is allowed. If access is denied, user will be asked to search manually. Background image will change dynamically on every search, displaying random picture of searched location.
+Simple password generator made with React. User can choose password length and optionally include capital letters, numbers or symbols.
 
 ## Built With
 
